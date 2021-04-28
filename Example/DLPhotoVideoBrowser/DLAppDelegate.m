@@ -6,9 +6,9 @@
 //  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
-#import "CPDAppDelegate.h"
+#import "DLAppDelegate.h"
 
-@implementation CPDAppDelegate
+@implementation DLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -44,4 +44,3 @@
 }
 
 @end
-Õ

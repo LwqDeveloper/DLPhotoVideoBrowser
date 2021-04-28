@@ -41,7 +41,7 @@
 		1295D2E99D393E26F47D48DC /* Pods-DLPhotoVideoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLPhotoVideoBrowser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DLPhotoVideoBrowser_Tests/Pods-DLPhotoVideoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		21A77513641CE15C9DBA4C6B /* Pods_DLPhotoVideoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLPhotoVideoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F986D056C614F630DEA0C9 /* Pods-DLPhotoVideoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLPhotoVideoBrowser_Example.debug.xcconfig"; path = "Target Support Files/Pods-DLPhotoVideoBrowser_Example/Pods-DLPhotoVideoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5957BB9FDCF1C445A7604C9A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5957BB9FDCF1C445A7604C9A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DLPhotoVideoBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLPhotoVideoBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,9 +64,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		925F9D30D99B7F01D181BC1A /* Pods-DLPhotoVideoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLPhotoVideoBrowser_Tests.release.xcconfig"; path = "Target Support Files/Pods-DLPhotoVideoBrowser_Tests/Pods-DLPhotoVideoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AFB354DDC8A7329897D03659 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AFB354DDC8A7329897D03659 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DF980A927CA05EEC5D0A6C83 /* Pods-DLPhotoVideoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLPhotoVideoBrowser_Example.release.xcconfig"; path = "Target Support Files/Pods-DLPhotoVideoBrowser_Example/Pods-DLPhotoVideoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E1CCA5B1DC6BB83CF26D2E4B /* DLPhotoVideoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DLPhotoVideoBrowser.podspec; path = ../DLPhotoVideoBrowser.podspec; sourceTree = "<group>"; };
+		E1CCA5B1DC6BB83CF26D2E4B /* DLPhotoVideoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DLPhotoVideoBrowser.podspec; path = ../DLPhotoVideoBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				1295D2E99D393E26F47D48DC /* Pods-DLPhotoVideoBrowser_Tests.debug.xcconfig */,
 				925F9D30D99B7F01D181BC1A /* Pods-DLPhotoVideoBrowser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +303,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DLPhotoVideoBrowser_Example/Pods-DLPhotoVideoBrowser_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DLPhotoVideoBrowser/DLPhotoVideoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLPhotoVideoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
