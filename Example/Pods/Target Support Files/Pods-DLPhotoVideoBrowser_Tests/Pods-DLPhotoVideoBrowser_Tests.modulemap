@@ -1,0 +1,6 @@
+framework module Pods_DLPhotoVideoBrowser_Tests {
+  umbrella header "Pods-DLPhotoVideoBrowser_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

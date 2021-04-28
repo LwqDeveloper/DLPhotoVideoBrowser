@@ -1,0 +1,35 @@
+{
+  "name": "DLPhotoVideoBrowser",
+  "version": "0.1.0",
+  "summary": "照片/视频浏览器",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/LwqDeveloper/DLPhotoVideoBrowser",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "muyang": "lee_weiqiong@163.com"
+  },
+  "source": {
+    "git": "https://github.com/LwqDeveloper/DLPhotoVideoBrowser.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DLPhotoVideoBrowser/Classes/**/*",
+  "resource_bundles": {
+    "DLPhotoVideoBrowser": [
+      "DLPhotoVideoBrowser/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "SDWebImage": [
+
+    ],
+    "FLAnimatedImage": [
+
+    ]
+  }
+}

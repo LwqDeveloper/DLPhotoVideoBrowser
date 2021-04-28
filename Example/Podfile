@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DLPhotoVideoBrowser_Example' do
+  pod 'DLPhotoVideoBrowser', :path => '../'
+
+  pod 'Masonry'
+  target 'DLPhotoVideoBrowser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

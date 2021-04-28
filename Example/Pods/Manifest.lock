@@ -1,0 +1,33 @@
+PODS:
+  - DLPhotoVideoBrowser (0.1.0):
+    - FLAnimatedImage
+    - SDWebImage
+  - FLAnimatedImage (1.0.16)
+  - Masonry (1.1.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - DLPhotoVideoBrowser (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - FLAnimatedImage
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  DLPhotoVideoBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DLPhotoVideoBrowser: 67a7375899be5c199d839133469f1a289b24cad4
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: 15712d9ace75cabc6260877443d79360be743f03
+
+COCOAPODS: 1.10.1
