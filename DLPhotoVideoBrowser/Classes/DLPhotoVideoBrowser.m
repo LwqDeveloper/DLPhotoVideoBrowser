@@ -89,12 +89,27 @@
     return self;
 }
 
+- (void)setShowDownloadBtn:(BOOL)showDownloadBtn {
+    _showDownloadBtn = showDownloadBtn;
+    
+    for (UIView *view in self.mScrollView.subviews) {
+        if ([view isKindOfClass:[DLPhotoItemView class]]) {
+            DLPhotoItemView *photoView = (DLPhotoItemView *)view;
+            photoView.showDownloadBtn = showDownloadBtn;
+        }
+        if ([view isKindOfClass:[DLVideoItemView class]]) {
+            DLVideoItemView *videoView = (DLVideoItemView *)view;
+            videoView.showDownloadBtn = showDownloadBtn;
+        }
+    }
+}
+
 #pragma mark - DLPhotoItemViewImageDelegate 点击图片回收 10+
 - (void)DLPhotoItemViewClick:(NSInteger)viewTag gesture:(UITapGestureRecognizer *)gesture{
     CGRect fromRect1 = [_mScrollView convertRect:_fromImgView.frame fromView:_fromImgView.superview];
     CGRect fromRect2 = [_mScrollView convertRect:_fristImgView.frame fromView:_fristImgView.superview];
     DLPhotoItemView *imageCell = [_mScrollView viewWithTag:viewTag];
-    imageCell.scanBt.hidden = YES;
+    imageCell.saveButton.hidden = YES;
 
     [UIView animateWithDuration:0.3 animations:^{
         self.backView.alpha = 0.01;
@@ -131,7 +146,8 @@
     CGRect fromRect1 = [_mScrollView convertRect:_fromImgView.frame fromView:_fromImgView.superview];
     CGRect fromRect2 = [_mScrollView convertRect:_fristImgView.frame fromView:_fristImgView.superview];
     
-    DLVideoItemView  *videoView = [_mScrollView viewWithTag:viewTag];
+    DLVideoItemView *videoView = [_mScrollView viewWithTag:viewTag];
+    videoView.mVideoImagelayer.saveButton.hidden = YES;
     
     [UIView animateWithDuration:0.3 animations:^{
         self.backView.alpha = 0.01;

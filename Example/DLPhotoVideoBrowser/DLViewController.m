@@ -48,6 +48,7 @@
     }
     
     DLPhotoVideoBrowser *browser = [[DLPhotoVideoBrowser alloc] initWithGroupItems:items currentIndex:0];
+//    browser.showDownloadBtn = NO;
     [browser setSaveVideoHandle:^(DLPhotoVideoModel *model) {
         NSLog(@"下载视频:%@", model.videoPath);
     }];
@@ -72,6 +73,7 @@
     }
     
     DLPhotoVideoBrowser *browser = [[DLPhotoVideoBrowser alloc] initWithGroupItems:items currentIndex:indexPath.row];
+//    browser.showDownloadBtn = NO;
     [browser setSavePhotoHandle:^(UIImage *image, NSString *imageUrl) {
         NSLog(@"下载照片:%@", imageUrl);
     }];

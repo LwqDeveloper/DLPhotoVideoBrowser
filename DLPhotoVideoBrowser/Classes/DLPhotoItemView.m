@@ -50,9 +50,16 @@
         _saveButton.frame = CGRectMake(self.bounds.size.width -15 -36, self.bounds.size.height -30 -36 -[[UIApplication sharedApplication] statusBarFrame].size.height, 36, 36);
         [_saveButton setImage:[DLPhotoVideoModel pathForResourceName:@"browser_download" suffix:@"png"] forState:UIControlStateNormal];
         [_saveButton addTarget:self action:@selector(saveButtonTap) forControlEvents:UIControlEventTouchUpInside];
+        _saveButton.hidden = YES;
         [self addSubview:_saveButton];
     }
     return self;
+}
+
+- (void)setShowDownloadBtn:(BOOL)showDownloadBtn {
+    _showDownloadBtn = showDownloadBtn;
+    
+    self.saveButton.hidden = !showDownloadBtn;
 }
 
 /// 点击下载按钮

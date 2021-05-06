@@ -44,6 +44,11 @@
     return self;
 }
 
+- (void)setShowDownloadBtn:(BOOL)showDownloadBtn {
+    _showDownloadBtn = showDownloadBtn;
+    
+    self.mVideoImagelayer.showDownloadBtn = showDownloadBtn;
+}
 
 //设置frame
 - (void)setVideoViewFrame:(CGRect)videoViewFrame {
@@ -249,6 +254,12 @@
     return self;
 }
 
+- (void)setShowDownloadBtn:(BOOL)showDownloadBtn {
+    _showDownloadBtn = showDownloadBtn;
+    
+    _saveButton.hidden = !showDownloadBtn;
+}
+
 //刷新控件的位置
 - (void)setNewFrameWithDeviceoRientation {
     CGFloat statusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
@@ -338,7 +349,7 @@
         _playSlider.hidden = NO;
         _currenTimeLab.hidden = NO;
         _totalTimeLab.hidden = NO;
-        _saveButton.hidden = NO;
+        _saveButton.hidden = !_showDownloadBtn;
     }
 }
 

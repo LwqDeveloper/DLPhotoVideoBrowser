@@ -49,6 +49,8 @@ typedef NS_ENUM(NSInteger, DLVideoLayerStatus) {
 /// 最新的视频
 @property (nonatomic, strong) AVPlayer                *player;
 @property (nonatomic, strong) AVPlayerLayer           *playerLayer;
+/// 是否显示下载按钮
+@property (nonatomic, assign) BOOL                showDownloadBtn;
 
 @end
 
@@ -96,6 +98,8 @@ typedef NS_ENUM(NSInteger, DLVideoLayerStatus) {
 @property (nonatomic, strong) UIButton           *saveButton;
 /// 视频地址
 @property (nonatomic, assign) NSString           *videoUrl;
+/// 是否显示下载按钮
+@property (nonatomic, assign) BOOL                showDownloadBtn;
 
 //根据屏幕旋转刷新控件的位置
 - (void)setNewFrameWithDeviceoRientation;

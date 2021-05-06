@@ -44,6 +44,8 @@
 //屏幕在一定情况下不需要处理旋转操作
 @property (nonatomic, assign) UIDeviceOrientation deviceOrientation;
 
+/// 是否显示下载按钮
+@property (nonatomic, assign) BOOL                showDownloadBtn;
 //保存图片和视频按钮
 @property (nonatomic, strong) UIButton            *saveButton;
 

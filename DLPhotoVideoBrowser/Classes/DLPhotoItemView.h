@@ -23,17 +23,17 @@
 
 @property (nonatomic, assign)id <DLPhotoItemViewDelegate> photoDelegate;
 
-//初始化cell
+/// 初始化cell
 - (instancetype)initWithItem:(DLPhotoVideoModel *)item;
-//设置frame
+/// 设置frame
 @property (nonatomic, assign) CGRect              imageCellFrame;
-//展示单位
+/// 展示单位
 @property (nonatomic, strong) DLPhotoVideoModel   *item;
-//展示图
+/// 展示图
 @property (nonatomic, strong) FLAnimatedImageView *mImageView;
-//保存图片和视频按钮
+/// 保存图片和视频按钮
 @property (nonatomic, strong) UIButton            *saveButton;
-//二维码识别按钮
-@property (nonatomic, strong) UIButton            *scanBt;
+/// 是否显示下载按钮
+@property (nonatomic, assign) BOOL                showDownloadBtn;
 
 @end
