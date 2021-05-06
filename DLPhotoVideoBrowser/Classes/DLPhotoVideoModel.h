@@ -34,8 +34,9 @@ typedef NS_ENUM(NSInteger, DLBrowserShowType) {
 @property (nonatomic, strong) NSString          *videoPath;
 // 短视频本地路径
 @property (nonatomic, strong) NSString          *videoLocalPath;
-// 标签
-@property (nonatomic, assign) NSInteger         itemTag;
+
+// 本地文件
+@property (nonatomic, strong) UIImage           *imageLocal;
 // 文件名称
 @property (nonatomic, strong) NSString          *imageRemotePath;
 

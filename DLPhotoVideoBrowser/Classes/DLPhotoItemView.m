@@ -33,7 +33,12 @@
         [self addSubview:_mImageView];
         _mImageView.userInteractionEnabled = YES;
         
-        [_mImageView sd_setImageWithURL:[NSURL URLWithString:_item.imageRemotePath] placeholderImage:_item.fromImage options:SDWebImageRetryFailed];
+        if (_item.imageLocal) {
+            _mImageView.image = _item.imageLocal;
+        }
+        if (_item.imageRemotePath.length > 0) {
+            [_mImageView sd_setImageWithURL:[NSURL URLWithString:_item.imageRemotePath] placeholderImage:_item.fromImage options:SDWebImageRetryFailed];
+        }
         _mImageView.contentMode = _item.contentMode;
         
         UITapGestureRecognizer* gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(GestureRecognizerPressed:)];
