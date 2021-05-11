@@ -28,8 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"图片/视频浏览器";
-    
-    self.videoPath = @"https://images.yxdating.com/chat_im/stg/20210425/1619341556603/2E159A09480A4E8B90BF277BC0BD051F.mp4";
+        
+    self.videoPath = @"http://img.jianaiba.com/chat/tv/6a/bc/98e8874314b830c5eacf4a347232.mp4";
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);

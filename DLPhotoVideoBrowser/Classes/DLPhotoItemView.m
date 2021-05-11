@@ -26,6 +26,10 @@
         self.showsHorizontalScrollIndicator = NO;
         self.frame = [UIScreen mainScreen].bounds;
         
+        if (@available(iOS 11.0, *)) {
+            [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+        }
+        
         _item = item;
         
         _mImageView = [[FLAnimatedImageView alloc] init];
@@ -73,7 +77,7 @@
 - (void)setImageCellFrame:(CGRect)imageCellFrame{
     _imageCellFrame = imageCellFrame;
     self.frame = _imageCellFrame;
-    _mImageView.frame = CGRectMake(self.bounds.origin.x, self.bounds.origin.y -47, self.bounds.size.width, self.bounds.size.height);
+    _mImageView.frame = self.bounds;
 }
 
 /// 滚动触发

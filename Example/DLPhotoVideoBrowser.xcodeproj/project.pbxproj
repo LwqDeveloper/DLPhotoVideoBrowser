@@ -247,6 +247,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "lee_weiqiong@163.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = KA5B2N32YH;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -500,12 +504,15 @@
 			baseConfigurationReference = 53F986D056C614F630DEA0C9 /* Pods-DLPhotoVideoBrowser_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KA5B2N32YH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DLPhotoVideoBrowser/DLPhotoVideoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "DLPhotoVideoBrowser/DLPhotoVideoBrowser-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mifei.DLPhotoVideoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pp_dev_tongpei;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -516,12 +523,15 @@
 			baseConfigurationReference = DF980A927CA05EEC5D0A6C83 /* Pods-DLPhotoVideoBrowser_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KA5B2N32YH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DLPhotoVideoBrowser/DLPhotoVideoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "DLPhotoVideoBrowser/DLPhotoVideoBrowser-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mifei.DLPhotoVideoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pp_dev_tongpei;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
