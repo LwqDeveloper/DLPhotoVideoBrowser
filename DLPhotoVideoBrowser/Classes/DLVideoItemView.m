@@ -293,7 +293,7 @@
    
     CGRect totalTimeLblFrame = _totalTimeLab.frame;
     totalTimeLblFrame.origin.y = CGRectGetMidY(_playLeftButton.frame) -totalTimeLblFrame.size.height /2;
-    totalTimeLblFrame.origin.x = CGRectGetMaxY(_playSlider.frame) +10;
+    totalTimeLblFrame.origin.x = CGRectGetMaxX(_playSlider.frame) +10;
     _totalTimeLab.frame = totalTimeLblFrame;
     
     CGRect saveBtnFrame = _saveButton.frame;
@@ -329,7 +329,7 @@
     
     CGRect totalTimeLblFrame = _totalTimeLab.frame;
     totalTimeLblFrame.origin.y = CGRectGetMidY(_playLeftButton.frame) -totalTimeLblFrame.size.height /2;
-    totalTimeLblFrame.origin.x = CGRectGetMaxY(_playSlider.frame) +10;
+    totalTimeLblFrame.origin.x = CGRectGetMaxX(_playSlider.frame) +10;
     _totalTimeLab.frame = totalTimeLblFrame;
 }
 
